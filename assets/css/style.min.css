@@ -574,6 +574,10 @@ body.no-scroll {
   }
 }
 @media (max-width: 992px) {
+  .home__page-about {
+    margin-bottom: 8rem;
+  }
+
   .home__page-about-img {
     display: none;
   }
@@ -735,6 +739,10 @@ body.no-scroll {
   }
 }
 @media (max-width: 992px) {
+  .home__page-specialization {
+    margin-bottom: 6rem;
+  }
+
   .home__page-specialization-block {
     width: 23rem;
     height: 23rem;
@@ -745,11 +753,7 @@ body.no-scroll {
   }
 
   .home__page-specialization-block-read {
-    margin-top: 0rem;
-  }
-
-  .home__page-specialization-block-read--mt {
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 
   .home__page-specialization-block-title {
@@ -803,7 +807,11 @@ body.no-scroll {
 
   .home__page-specialization-block-info {
     top: 2.5rem;
-    left: 1.5rem;
+    left: 1.3rem;
+  }
+
+  .home__page-specialization-block-read {
+    margin-top: 0rem;
   }
 
   .home__page-specialization-block-read--mt {
@@ -870,7 +878,7 @@ body.no-scroll {
 }
 
 .home__page-project-examples-img {
-  width: 54rem;
+  width: 49%;
   height: 30.5rem;
   border-radius: 2rem;
 }
@@ -878,6 +886,11 @@ body.no-scroll {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 992px) {
+  .home__page-project {
+    display: none;
+  }
+}
 /* ---HOME__PAGE-FEEDBACk--- */
 .home__page-feedback {
   width: 100%;
@@ -948,6 +961,37 @@ body.no-scroll {
   margin: 2rem 0rem 0rem 2.6rem;
 }
 
+@media (max-width: 992px) {
+  .home__page-feedback {
+    margin-bottom: 10rem;
+  }
+
+  .home__page-feedback-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home__page-feedback-main {
+    margin-bottom: 3rem;
+  }
+
+  .home__page-feedback-title {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .home__page-feedback-subtitle {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .home__page-feedback {
+    display: none;
+  }
+}
 /* ---HOME__PAGE-GROW--- */
 .home__page-grow {
   width: 100%;
@@ -1003,6 +1047,46 @@ body.no-scroll {
   font-feature-settings: "salt" on, "liga" off;
 }
 
+@media (max-width: 992px) {
+  .home__page-grow {
+    height: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  .home__page-grow-title {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .home__page-grow-benefits-block-title {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .home__page-grow-benefits-block-subtitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .home__page-grow {
+    height: 30rem;
+  }
+
+  .home__page-grow .home__page-grow-benefits-block-title,
+.home__page-grow .home__page-grow-benefits-block-subtitle {
+    display: none;
+  }
+
+  .home__page-grow-title {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
 /* ---ABOUT__PAGE--- */
 .about__page {
   width: 100%;
