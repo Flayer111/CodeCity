@@ -58,13 +58,6 @@ body.no-scroll {
     padding: 3rem 1.5rem;
 }
 
-.container__specialization {
-    width: 100%;
-    max-width: 30.6rem;
-    margin: 0 auto;
-    padding: 2.5rem 0rem 4rem 0rem;
-}
-
 @media (max-width: 1140px) {
     .container {
         max-width: 970px;
