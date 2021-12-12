@@ -148,7 +148,7 @@ body.no-scroll {
   }
 
   .header-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .header-mobile {
@@ -241,6 +241,11 @@ body.no-scroll {
   .header-burger._active:after {
     top: 50%;
     transform: rotate(45deg) translate(0px, 50%);
+  }
+}
+@media (max-width: 767px) {
+  .header-title {
+    font-size: 2.5rem;
   }
 }
 .btn__contact {
@@ -1577,6 +1582,187 @@ body.no-scroll {
   color: #f3f1f1;
 }
 
+@media (max-width: 1140px) {
+  .services__page-main-block--mb75-adaptiv {
+    margin-bottom: 7.5rem;
+  }
+
+  .services__page-main-info {
+    padding: 0rem 5rem;
+  }
+
+  .services__page-main-block-img:hover {
+    transform: scale(1);
+  }
+}
+@media (max-width: 992px) {
+  .services__page-main-info {
+    padding: 0rem 0rem;
+  }
+
+  .services__page-header-title {
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .services__page-main-title {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .services__page-footer-text {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .services__page-content {
+    margin: 5rem 0rem 2rem 0rem;
+  }
+}
+@media (max-width: 767px) {
+  .services__page-main-info {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 750px) {
+  .services__page-main-block {
+    display: block;
+    margin: 0rem auto 5rem;
+  }
+  .services__page-main-block:last-child {
+    margin-bottom: 2rem;
+  }
+
+  .services__page-main-info {
+    flex-direction: column;
+  }
+
+  .services__page-header-title {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .services__page-main-title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+
+  .services__page-footer-text {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .services__page-main {
+    margin: 10rem 0rem 5rem 0rem;
+  }
+}
+@media (max-width: 700px) {
+  .services__page-header-title {
+    position: absolute;
+    left: 5rem;
+    bottom: 10rem;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .services__page-footer-text {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .services__page-footer-info {
+    position: absolute;
+    top: 10rem;
+    left: 4rem;
+    z-index: 1;
+  }
+}
+@media (max-width: 600px) {
+  .services__page-footer-info .btn__contact {
+    display: none;
+  }
+
+  .services__page-header-title {
+    position: absolute;
+    left: 5rem;
+    bottom: 6rem;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  .services__page-main-title {
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .services__page-main-info {
+    padding: 0rem 0rem;
+  }
+}
+@media (max-width: 380px) {
+  .services__page-footer-text {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .services__page-footer-info {
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
+    z-index: 1;
+  }
+
+  .services__page-header-title {
+    left: 3rem;
+    bottom: 5rem;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .services__page-main-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .services__page-main-block {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .services__page-main-block-text {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .services__page-main-block-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .services__page-main-block {
+    width: 23rem;
+    height: 23rem;
+  }
+}
 /* ---SERVICES__ANALYTICS-- */
 .services__analytics-task {
   font-weight: 700;
@@ -1593,6 +1779,7 @@ body.no-scroll {
   position: relative;
 }
 .services__analytics-report:after {
+  margin-top: 1rem;
   display: block;
   height: 0.1rem;
   width: 45rem;
@@ -1621,6 +1808,93 @@ body.no-scroll {
   margin-top: 8rem;
 }
 
+@media (max-width: 992px) {
+  .services__analytics-task {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .services__analytics-report {
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  .services__analytics-task {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-top: 7rem;
+  }
+
+  .services__analytics-report {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .services__analytics-result {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+
+  .services__analytics-kpi {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .services__analytics-report:after {
+    margin-top: 1rem;
+    display: block;
+    height: 0.1rem;
+    width: 30rem;
+    content: ".";
+    color: transparent;
+    background: #fff;
+    opacity: 0.5;
+  }
+
+  .services__analytics-task {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .services__analytics-report {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .services__analytics-result {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .services__analytics-kpi {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+@media (max-width: 380px) {
+  .services__analytics-report:after {
+    margin-top: 1rem;
+    display: block;
+    height: 0.1rem;
+    width: 20rem;
+    content: ".";
+    color: transparent;
+    background: #fff;
+    opacity: 0.5;
+  }
+}
 /* ---SERVICES__ANALYTICS-- */
 .services__design-concept {
   font-weight: 700;
@@ -1658,6 +1932,51 @@ body.no-scroll {
   margin-top: 6rem;
 }
 
+@media (max-width: 992px) {
+  .services__design-concept {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .services__design-concept {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .services__design-specialists {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  .services__design-system {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .services__design-concept {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .services__design-specialists {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+  }
+
+  .services__design-system {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 4rem;
+  }
+}
 /* ---SERVICES__MOBILE-APPS-- */
 .services__mobile-title {
   font-weight: 800;
@@ -1669,47 +1988,29 @@ body.no-scroll {
 
 .services__mobile-info {
   width: 100%;
-  height: 88rem;
   text-align: center;
-  position: relative;
 }
 
 .services__mobile-img {
-  width: 88rem;
-  height: 88rem;
+  width: 100%;
 }
 
-.services__mobile-text-convenience {
-  width: 30rem;
-  background-color: #3e2ba8;
-  position: absolute;
-  top: 8.5rem;
-  font-weight: 800;
-  font-size: 4rem;
-  line-height: 6rem;
+@media (max-width: 992px) {
+  .services__mobile-title {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-bottom: 10rem;
+  }
 }
-
-.services__mobile-text-loading {
-  width: 32rem;
-  background-color: #3e2ba8;
-  position: absolute;
-  bottom: 40.6rem;
-  right: 0;
-  font-weight: 800;
-  font-size: 4rem;
-  line-height: 6rem;
+@media (max-width: 767px) {
+  .services__mobile-title {
+    font-weight: 800;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    margin-bottom: 7rem;
+  }
 }
-
-.services__mobile-text-saving {
-  width: 28rem;
-  background-color: #3e2ba8;
-  position: absolute;
-  bottom: 8.5rem;
-  font-weight: 800;
-  font-size: 4rem;
-  line-height: 6rem;
-}
-
 /* ---SERVICES__SEO-- */
 .services__seo-experience {
   font-weight: 400;
@@ -1719,6 +2020,22 @@ body.no-scroll {
   margin-top: 10rem;
 }
 
+@media (max-width: 992px) {
+  .services__seo-experience {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .services__seo-experience {
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    text-align: left;
+    margin-top: 7rem;
+  }
+}
 /* ---SERVICES__ANALYTICS-- */
 .services__commerce-title {
   font-weight: 800;
