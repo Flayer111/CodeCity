@@ -287,12 +287,19 @@ body.no-scroll {
     height: 5.3rem;
     background: #3e2ba8;
     border-radius: 1rem;
+    cursor: pointer;
     transition: background 0.2s linear;
 }
 
 .btn__contact:hover {
     background: #2a1794;
     color: #f3f1f1;
+}
+
+.btn__contact--small {
+    width: 9rem;
+    height: 3rem;
+    border: none;
 }
 
 .contact__text {
@@ -304,6 +311,14 @@ body.no-scroll {
     text-transform: capitalize;
     color: #fff;
     text-decoration: none;
+}
+
+.contact__text--small {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
 }
 
 /* ---FOOTER--- */
@@ -2569,4 +2584,179 @@ body.no-scroll {
     .price__page-card-subtitle {
         width: 25rem;
     }
+}
+/* ---MODAL-CONTACT--- */
+.modal-contact {
+    display: none;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    transition: display 1s linear;
+}
+
+.modal-contact.contact-active {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.modal-contact-content {
+    width: 100%;
+    max-width: 50rem;
+    background-color: #12141D;
+    border-radius: 0.5rem;
+    position: relative;
+    padding: 8rem 8rem 2.5rem;
+}
+
+.form-item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.form-item-input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+    border-bottom: 0.1rem solid #3F3F3F;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    padding: 0.5rem 0 0.75rem;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #fff;
+}
+
+.form-item-input::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 0.2;
+}
+
+.form-item-input::-moz-placeholder {
+    color: #fff;
+    opacity: 0.2;
+}
+
+.form-item-input:-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.2;
+}
+
+.form-item-input::-ms-input-placeholder {
+    color: #fff;
+    opacity: 0.2;
+}
+
+.form-item-input::placeholder {
+    color: #fff;
+    opacity: 0.2;
+}
+
+.form-item-input:focus + .form-item-line {
+    width: 100%;
+}
+
+.form-item-input--textarea {
+    height: 10rem;
+    overflow: hidden;
+    resize: none;
+    border: 0.1rem solid #3F3F3F;
+    padding: 1.5rem 1rem;
+}
+
+.form-item-line {
+    width: 0;
+    height: 0.1rem;
+    background-color: #107EFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s linear;
+}
+
+.form-send {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form-send-check {
+    display: block;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.form-send-check-input {
+    margin: 0;
+}
+
+.form-send-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #B2B2B2;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-left: 0.5rem;
+}
+
+.modal-contact-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #B2B2B2;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: 5rem;
+}
+
+.modal-contact-footer li {
+    margin: 0 0.5rem;
+    list-style: none;
+}
+
+.modal-contact-footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.modal-contact-footer a:hover {
+    text-decoration: none;
+}
+
+.modal-contact-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.modal-contact-close:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.modal-contact-close.contact-close .modal-contact {
+    display: none;
 }

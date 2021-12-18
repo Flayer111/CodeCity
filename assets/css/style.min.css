@@ -190,7 +190,7 @@ body.no-scroll {
     line-height: 2.1rem;
     color: #fff;
   }
-  .header-mobile .btn__contact {
+  .header-mobile .btn__contact, .header-mobile .btn__contact-mobile {
     margin: 0 auto;
   }
   .header-mobile._active {
@@ -284,6 +284,21 @@ body.no-scroll {
   line-height: 1.4rem;
   text-align: center;
   padding: 0.8rem 1.5rem;
+}
+
+.btn__contact-mobile {
+  display: flex;
+  align-items: center;
+  width: 15.7rem;
+  height: 5.3rem;
+  background: #3e2ba8;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.2s linear;
+}
+.btn__contact-mobile:hover {
+  background: #2a1794;
+  color: #f3f1f1;
 }
 
 /* ---FOOTER--- */
@@ -2416,6 +2431,11 @@ body.no-scroll {
 .modal-contact.contact-active {
   display: flex;
 }
+.modal-contact.modal-contact-mobile {
+  display: flex;
+  background: none;
+  position: initial;
+}
 
 .modal-contact-content {
   width: 100%;
@@ -2424,6 +2444,16 @@ body.no-scroll {
   border-radius: 0.5rem;
   position: relative;
   padding: 8rem 8rem 2.5rem;
+}
+@media (max-width: 992px) {
+  .modal-contact-content {
+    padding: 20rem 3rem 2.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .modal-contact-content {
+    padding: 5rem 3rem 2.5rem;
+  }
 }
 
 .form-item {
@@ -2515,6 +2545,14 @@ body.no-scroll {
 .modal-contact-footer a:hover {
   text-decoration: none;
 }
+@media (max-width: 410px) {
+  .modal-contact-footer {
+    display: block;
+  }
+  .modal-contact-footer li {
+    margin-bottom: 2rem;
+  }
+}
 
 .modal-contact-close {
   background: none;
@@ -2530,5 +2568,8 @@ body.no-scroll {
   transform: rotate(90deg);
 }
 .modal-contact-close.contact-close .modal-contact {
+  display: none;
+}
+.modal-contact-close.modal-contact-close-mobile {
   display: none;
 }
